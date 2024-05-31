@@ -9,7 +9,7 @@ export default function HomePage() {
     const [scrollY, setScrollY] = useState<number>(0);
     const isOver = scrollY > 0 ? true : false;
 
-     const onScroll = useCallback(event => {
+     const onScroll = useCallback((event:Event) => {
       const { pageYOffset, scrollY } = window;
       console.log("yOffset", pageYOffset, "scrollY", scrollY);
       setScrollY(window.pageYOffset);
@@ -20,7 +20,7 @@ export default function HomePage() {
     window.addEventListener("scroll", onScroll, { passive: true });
     // remove event on unmount to prevent a memory leak with the cleanup
     return () => {
-       window.removeEventListener("scroll", onScroll, { passive: true });
+       window.removeEventListener("scroll", onScroll);
     }
   }, []);
     
