@@ -1,0 +1,33 @@
+@import '../../assets/styles/variables.module.scss';
+
+
+.menu_deactivate{
+    background-color: $primary-300;
+}
+
+.menu_active {
+    color: white;
+
+    &:hover{
+        background-color: $primary-600;
+    }
+}
+
+.font_shadow{
+    box-shadow: 0 10px 4px -4px rgba(0,0,0,0.78);
+    -webkit-box-shadow: 0 10px 4px -4px rgba(0,0,0,0.78);
+    -moz-box-shadow: 0 10px 4px -4px rgba(0,0,0,0.78);
+}
+
+.logo_animation{
+    height: 3rem;
+    width: auto;
+    border-radius: 100%;
+    box-shadow: $box-shadow_logo;
+
+    &:hover {
+        transition: 2s;
+        transform: rotate(0.5turn);
+        box-shadow: $box-shadow_logo_reverse;
+    }
+}
