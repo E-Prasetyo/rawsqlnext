@@ -1,5 +1,5 @@
 'use client'
-import logos from '../../assets/images/profile.JPG';
+import logos from '../../assets/images/profile.jpg';
 import bg_home from '../../assets/images/background_home.jpg';
 import Image from "next/image";
 import { FaArrowDown } from 'react-icons/fa';
