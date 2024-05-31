@@ -1,6 +1,6 @@
 'use client'
-import logos from '../../../images/profile.jpg';
-import bg_home from '../../../images/background_home.jpg';
+import logos from '../../../public/images/profile.jpg';
+import bg_home from '../../../public/images/background_home.jpg';
 import Image from "next/image";
 import { FaArrowDown } from 'react-icons/fa';
 import { useCallback, useEffect, useState } from 'react';

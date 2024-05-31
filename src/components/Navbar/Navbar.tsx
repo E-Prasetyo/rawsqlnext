@@ -3,7 +3,7 @@ import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/16/solid";
 import { Fragment, useEffect, useState } from "react";
 import Image from 'next/image'
-import logo from '../../../images/logo.png'
+import logo from '../../../public/images/logo.png'
 import styles from './navbar.module.scss'
 import { usePathname, useRouter } from 'next/navigation'
 
