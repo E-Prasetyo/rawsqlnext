@@ -23,7 +23,6 @@ export default function NavbarComponent() {
   const [current, setCurrent] = useState('');
   const isLogin = false;
 
-
   useEffect(() => {
     setCurrent(pathname);
   }, [pathname])
@@ -32,7 +31,6 @@ export default function NavbarComponent() {
     return router.push(path)
   }
   
-
   return (
     <Disclosure as="nav" className="">
       {({ open }) => (
@@ -68,7 +66,7 @@ export default function NavbarComponent() {
                           current == item.path ?
                             `text-blue-400 ${styles.font_shadow}` :
                             'text-slate-300 hover:bg-sky-700 hover:text-white',
-                          'px-3 py-1 text-sm font-medium'
+                          'px-3 py-1 text-sm font-medium font-mono'
                         )}
                         // aria-current={index ? 'page' : undefined}
                         onClick={()=> handleRedirect(item.path)}
@@ -86,7 +84,7 @@ export default function NavbarComponent() {
                     className="relative rounded-full bg-violet-800 p-1 text-sky-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
                   >
                     <span className="absolute -inset-1.5" />
-                    <span className="sr-only">View notifications</span>
+                    <span className="sr-only font-mono">View notifications</span>
                     <BellIcon className="h-6 w-6" aria-hidden="true" />
                   </button>
 
@@ -157,7 +155,7 @@ export default function NavbarComponent() {
                   href={item.path}
                   className={classNames(
                     item.path == pathname ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                    'block rounded-md px-3 py-2 text-base font-medium'
+                    'block rounded-md px-3 py-2 text-base font-medium font-mono'
                   )}
                   aria-current={item.path == pathname ? 'page' : undefined}
                 >
