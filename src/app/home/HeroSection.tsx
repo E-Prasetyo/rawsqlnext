@@ -7,14 +7,14 @@ import profile from '../../../public/images/profile.jpg';
 const HeroSection = () => {
 const test = "Developer Engineer"
   return (
-     <>
-        <div
-          className="w-full h-screen flex flex-col justify-center items-center from-cyan-500 to-blue-500"
-          style={{
-            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.9)),url('${bg_home.src}')`,
-            backgroundSize:'cover'
-          }}
-        >
+     <div
+        className="w-full h-screen flex flex-col items-center from-cyan-500 to-blue-500"
+        style={{
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.9)),url('${bg_home.src}')`,
+          backgroundSize:'cover'
+        }}
+      >
+        <div className='w-full h-full flex flex-col justify-center items-center'>
           <Image
             className="w-60 rounded-full "
             src={profile}
@@ -41,12 +41,12 @@ const test = "Developer Engineer"
               />
           </div>
         </div>
-        <div className='absolute p-2 left-[48.5%] top-[90vh] animate-bounce'>
+        <div className='animate-bounce'>
             <button className='bg-white h-12 w-12 flex justify-center items-center rounded-full shadow-lg'>
                 <FaArrowDown />
             </button>
         </div>
-      </>
+      </div>
   )
 }
 

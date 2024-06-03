@@ -1,15 +1,14 @@
 /* eslint-disable @next/next/no-img-element */
 'use client'
-import HeroSection from '../../templates/home/HeroSection';
+import Image from 'next/image';
+import HeroSection from './HeroSection';
 
 export default function HomePage() {
 
   const test = "Web Developer"
   return (
-    <main className="flex min-h-screen flex-col">
-      <div className="">
-        <HeroSection />
-      </div>
+    <main className="min-h-screen flex  flex-col">
+      <HeroSection />
       <div className='w-full h-screen'>
           jsryh
       </div>
