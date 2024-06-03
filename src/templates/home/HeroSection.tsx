@@ -1,13 +1,13 @@
 import Image from 'next/image';
 import { FaArrowDown } from 'react-icons/fa6';
-import TypewriterComponent from 'typewriter-effect';
+import Typewriter from 'typewriter-effect';
 import bg_home from '../../../public/images/background_home.jpg';
 import profile from '../../../public/images/profile.jpg';
 
 const HeroSection = () => {
 const test = "Developer Engineer"
   return (
-     <div className="">
+     <>
         <div
           className="w-full h-screen flex flex-col justify-center items-center from-cyan-500 to-blue-500"
           style={{
@@ -24,7 +24,7 @@ const test = "Developer Engineer"
             Tarsisius Eko Prasetyo
           </div>
           <div className='py-4 text-white font-mono text-6xl'>
-            <TypewriterComponent
+            <Typewriter
                 onInit={(typewriter) => {
                   typewriter.typeString(`${test}`)
                     .callFunction(() => {
@@ -46,7 +46,7 @@ const test = "Developer Engineer"
                 <FaArrowDown />
             </button>
         </div>
-      </div>
+      </>
   )
 }
 
